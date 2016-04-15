@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WpfMVVMTest.Model
 {
-    class Employee
+    public class Employee
     {
         public static Employee CreateEmployee(string name, string age)
         {

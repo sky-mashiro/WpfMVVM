@@ -10,14 +10,16 @@ using WpfMVVMTest.Model;
 using WpfMVVMTest.DataAccess;
 using WpfMVVMTest.Command;
 
+
 namespace WpfMVVMTest.ViewModel
 {
-    class MainWindowViewModel1:ViewModelBase
+    public class MainWindowViewModel1:ViewModelBase
     {
+        public List<string> state { get; set; }
+        public string addState { get; set; }
         private ICommand _removeCommand;
         private ICommand _addCommand;
         private Employee _newEmployee;
-
         public ObservableCollection<Employee> AllEmployees { get; set; }
         
         public Employee SelectEmployee { get; set; }
@@ -38,6 +40,8 @@ namespace WpfMVVMTest.ViewModel
             }
 
             _newEmployee = new Employee();
+            state = new List<string> { "AZ", "LA" };
+            addState = "444";
         }
         void RemoveExecute(object param)
         {

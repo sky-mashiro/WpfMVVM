@@ -7,7 +7,7 @@ using WpfMVVMTest.Model;
 
 namespace WpfMVVMTest.DataAccess
 {
-    class EmployeeRespository
+    public class EmployeeRespository
     {
         readonly List<Employee> _employees;
         public EmployeeRespository()

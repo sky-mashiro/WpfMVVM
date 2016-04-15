@@ -50,6 +50,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Archon.Enums, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Archon.Enums.1.0.2\lib\net451\Archon.Enums.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Archon.Enums.Geography, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Archon.Enums.Geography.1.0.2\lib\net451\Archon.Enums.Geography.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -89,6 +97,7 @@
     </ApplicationDefinition>
     <Compile Include="Command\CommandBase.cs" />
     <Compile Include="ViewModel\MainWindowViewModel1.cs" />
+    <Compile Include="ViewModel\USStates.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

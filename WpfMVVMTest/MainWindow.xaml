@@ -37,6 +37,8 @@
             <TextBlock>
                 <TextBlock Text="321" Foreground="Red" />
                 <TextBlock Text="123" Foreground="Green"/>
+                <ComboBox ItemsSource="{Binding state}" Text="select" SelectedItem="{Binding addState, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock Text="{Binding addState}"></TextBlock>
             </TextBlock>
         </StackPanel>
         
